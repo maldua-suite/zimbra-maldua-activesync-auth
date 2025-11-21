@@ -204,7 +204,7 @@ su - zimbra -c 'zmmailboxdctl restart'
 
 ## Alternate documentation
 
-- Z-Push Zimbra Backend has a nice [Adding 2FA to a working Zimbra Z-Push environment](https://sourceforge.net/p/zimbrabackend/code/HEAD/tree/zimbra-backend/branches/z-push-2/Adding-2FA-to-a-working-Zimbra-Z-Push-environment.txt) document.
+- Z-Push Zimbra Backend has a nice [Adding 2FA to a working Zimbra Z-Push environment](https://sourceforge.net/p/zimbrabackend/code/HEAD/tree/zimbra-backend/misc/Adding-2FA-to-a-working-Zimbra-Z-Push-environment.txt) document.
 
 ## Enforce ActiveSync being enabled usage
 
