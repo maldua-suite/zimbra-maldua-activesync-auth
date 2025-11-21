@@ -146,11 +146,19 @@ su - zimbra -c 'zmmailboxdctl restart'
 
 ### Initial setup (Z-Push VPS) {Step 4 of 4}
 
-Your existing Z-Push + Z-Push Backend for Zimbra VPS needs to be patched. The procedure changes depending on your Zimbra Backend version.
+Your existing Z-Push + Z-Push Backend for Zimbra VPS needs to be enabled/patched. The procedure changes depending on your Zimbra Backend version.
 
 #### Zimbra Backend release 75 (or higher)
 
-**TODO: You will be able to turn it on in your config.php**
+Usually you would need to edit `/usr/share/z-push/backend/zimbra/config.php` file so that
+```php
+//    define('ZIMBRA_CUSTOM_AUTH_PAGE','ZetaActiveSyncAuthRequest');
+```
+line is uncommented so that it reads:
+```php
+define('ZIMBRA_CUSTOM_AUTH_PAGE','ZetaActiveSyncAuthRequest');
+```
+.
 
 #### Zimbra Backend release 74 (or lower)
 
